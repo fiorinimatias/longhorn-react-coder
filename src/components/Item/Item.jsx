@@ -15,18 +15,16 @@ const Item = ({id, nombre, img, precio}) => {
       objectFit={'cover'}
     />
     <Stack mt='2' spacing='2'>
-      <Heading color='#30341c' size='md'>{nombre}</Heading>
-      <Text color='#30341c' fontSize='xl'>
-        ${precio}
-      </Text>
+      <Heading fontFamily={'Poppins'} fontWeight={'700'} color='#30341c' size='md'>{nombre}</Heading>
+      <Text fontFamily={'Poppins'} fontWeight={'400'} color='#30341c' fontSize='xl'>${precio}</Text>
     </Stack>
 
   </CardBody>
   <Divider color='#dddfbb' />
   <CardFooter justify={'center'} align={'center'}>
       <ButtonGroup spacing='2'>
-        <Button size={'sm'} boxShadow= {'3px 3px 6px rgba(0,0,0,0.5)'} borderRadius={'0'} bg={'#30341c'} color={'white'}>
-          <Link to={`/producto/${id}`}>Ver Detalles</Link>
+        <Button fontFamily={'Poppins'} fontWeight={'400'} bg={'#dddfbb'} color={'#30341c'} mt={2} _hover={{ backgroundColor: '#30341c', color: '#dddfbb'}}>
+        <Link to={`/producto/${id}`}>Ver detalle</Link>
       </Button>
       </ButtonGroup>
   </CardFooter>

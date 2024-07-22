@@ -1,19 +1,19 @@
 import React from 'react'
 import useCounter from '../../hooks/useCounter'
-import { Box, Button, ButtonGroup, Flex, Text } from '@chakra-ui/react'
+import { Button, Flex, Text } from '@chakra-ui/react'
 
 const ItemCount = ({initialValue, stock, onAdd}) => {
     const { count, incrementar, decrementar } = useCounter (initialValue, stock)
 
   return (
-    <Box>
+    <Flex flexDirection={'column'}>
       <Flex  justifyContent={'center'} alignItems={'center'} mb={'3'}>
-      <Button size={'xs'} boxShadow= {'2px 2px 4px rgba(0,0,0,0.5)'} bg={'#30341c'} color={'white'} borderRadius={'0'} onClick={decrementar}>-</Button>
-        <Text fontSize={'16'} pl={'3'} pr={'3'}>{count}</Text>
-      <Button size={'xs'} boxShadow= {'2px 2px 4px rgba(0,0,0,0.5)'} bg={'#30341c'} color={'white'} borderRadius={'0'} onClick={incrementar}>+</Button>
+      <Button size={'sm'} bg={'#dddfbb'} color={'#30341c'}  mt={2} _hover={{ backgroundColor: '#30341c', color: '#dddfbb'}} onClick={decrementar}>-</Button>
+        <Text fontSize={'20'} mt={'2'} pl={'3'} pr={'3'}>{count}</Text>
+      <Button size={'sm'} bg={'#dddfbb'} color={'#30341c'}  mt={2} _hover={{ backgroundColor: '#30341c', color: '#dddfbb'}} onClick={incrementar}>+</Button>
       </Flex>
-      <Button size={'sm'} boxShadow= {'2px 2px 4px rgba(0,0,0,0.5)'} borderRadius={'0'} bg={'#30341c'} color={'white'} onClick={() => onAdd(count)}>Agregar al carrito</Button>
-    </Box>
+      <Button bg={'#dddfbb'} color={'#30341c'}  mt={2} _hover={{ backgroundColor: '#30341c', color: '#dddfbb'}} onClick={() => onAdd(count)}>Agregar al carrito</Button>
+    </Flex>
   )
 }
 

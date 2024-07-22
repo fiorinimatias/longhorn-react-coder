@@ -3,9 +3,8 @@ import React from 'react';
 import Item from '../Item/Item';
 
 const ItemList = ({ productos }) => {
-  console.log(productos);
   return (
-    <Flex wrap={'wrap'} justify={'center'} align={'center'}>
+    <Flex fontFamily={'Poppins'} fontWeight={'400'} wrap={'wrap'} justify={'center'} align={'center'}>
       {productos.map((prod) => (
         <Box key={prod.id}>
           <Item {...prod} />

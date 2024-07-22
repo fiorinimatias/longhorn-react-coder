@@ -1,14 +1,10 @@
 import React from 'react'
-import { Box, Flex, Image } from '@chakra-ui/react'
-import notfound from '../../../public/error404.jpg'
+import { Flex, Image } from '@chakra-ui/react'
 
 const PageNotFound = () => {
   return (
   <Flex  backgroundColor={'#ececf0'} justifyContent={'center'}>
-    <Image
-      src={notfound}
-      h={'85vh'}
-    />
+    <Image src='https://i.postimg.cc/4NrkSK9V/error404.png' h={'85vh'}/>
   </Flex>
 
   )
