@@ -13,10 +13,3 @@ const firebaseConfig = {
 console.log("se conecto")
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
-
-// productos.forEach((prod) => {
-//     addDoc(collection(db,'productos'), prod)
-//         .then((data) => console.log(`El producto ${data.id} se subio correctamente`)
-//     )
-//     .catch((error) => console.log(error));
-// })
