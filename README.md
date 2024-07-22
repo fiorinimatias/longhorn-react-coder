@@ -29,6 +29,7 @@ A continuación se detallan los pasos para ejecutar la aplicación:
 
 2. **Instalar dependencias**:
 
+       ```bash
     npm install
 
 3. **Configurar Firebase**:
@@ -38,12 +39,14 @@ A continuación se detallan los pasos para ejecutar la aplicación:
 
 4. **Ejecutar la aplicación en modo desarrollo**:
 
+    ```bash
     npm start
 
     - Esto iniciará la aplicación en modo desarrollo. Abre http://localhost:3000 para verla en el navegador.
 
 5. **Compilar la aplicación para producción**:
 
+    ```bash
     npm run build
 
 6. **Desplegar la aplicación**:
